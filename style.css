@@ -16,15 +16,14 @@ body{
 
 main {
   background-color: var(--light-gray);
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 main .container {
-  width: 370px;
+  max-width: 370px;
   background-color: #FFF;
   display: flex;
   flex-flow: column wrap;
@@ -32,7 +31,6 @@ main .container {
   border-radius: 20px;
   box-shadow: 3px 4px 10px 1px #00000042;
 }
-
 
 main .container .image img {
   width: 100%;
@@ -50,4 +48,12 @@ main .container article p {
   font-size: var(--main-p-font-size);
   color: var(--grayish-blue);
   margin: 15px 0;
+}
+
+footer {
+  font-size: 11px;
+  text-align: center;
+}
+footer a {
+  color: hsl(228, 45%, 44%);
 }
